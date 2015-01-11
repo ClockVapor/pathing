@@ -13,7 +13,7 @@ Dijkstra's algorithm pathfinding in Ruby
 The easiest way to download the gem is to use [Bundler](http://bundler.io/) with a Gemfile. In your Gemfile, include the line `gem 'pathing'`. Then you can run `bundle install` to automatically download and compile the gem for your system. To include the gem in a Ruby file, use the line `require 'pathing'`.
 
 To do some pathfinding, first set up a graph interface object. This object defines the entire layout of your graph. The following example is one way of achieving a two-dimensional grid with neighbors only in the cardinal directions.
-```
+```ruby
 class Interface
   SIZE = 32
 
@@ -39,12 +39,12 @@ end
 ```
 
 Now, create a `Graph` object referencing your interface object.
-```
+```ruby
 graph = Pathing::Graph.new(Interface.new)
 ```
 
 You're all set. Simply call
-```
+```ruby
 graph.path([0,0], [15, 20])
 ```
 to get your optimized path!
