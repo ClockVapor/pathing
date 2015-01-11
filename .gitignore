@@ -10,6 +10,7 @@
 /tmp/
 /lib/
 *.swp
+Gemfile.lock
 
 ## Specific to RubyMotion:
 .dat*
